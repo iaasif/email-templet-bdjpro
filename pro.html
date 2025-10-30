@@ -41,13 +41,19 @@
 
                 <!-- Top bar -->
                 <div
-                    style="display:flex; align-items:center; justify-content:space-between; padding-left:24px; padding-right:24px; margin-top:8px; margin-bottom:24px;">
+                    style="display:flex; align-items:center; justify-content:space-between;  margin-top:8px; margin-bottom:24px;">
                     <div style="display:flex; align-items:center; gap:12px;">
-                        <img src="./Public/Web/bdjobs Logo.svg" alt="bdjobs logo">
+                        <img class="desktop-img" src="./Public/Web/bdjobs-logo.svg" alt="bdjobs logo">
+                        <!-- for mobile  -->
+                        <img class="mobile-img" src="./Public/Mobile/Bdjobs-logo-sm.svg" alt="bdjobs logo">
+
                     </div>
 
                     <div style="display:flex; align-items:center;">
-                        <img src="./Public/Web/Bdjobs Pro photo.svg" alt="">
+                        <img style="width: 100%;" class="desktop-img" src="./Public/Web/Bdjobs-pro-photo.svg" alt="">
+                        <img style="width: 100%;" class="mobile-img" src="./Public/Mobile/Bdjobs-pro-photo-sm.svg"
+                            alt="">
+
                     </div>
 
 
@@ -57,73 +63,78 @@
                 <div
                     style="position:relative; padding:40px; border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden;">
 
-                    <img style="margin-top:20px; margin-bottom:20px; display:flex; margin-left:auto; margin-right:auto;"
+                    <!-- first img  -->
+                    <img class="desktop-img"
+                        style="margin-top:20px; margin-bottom:20px; display:flex; margin-left:auto; margin-right:auto;"
                         src="./Public/Web/Bdjobs-pro1.svg" alt="">
+
+                    <!-- for mobile  -->
+                    <img class="mobile-img"
+                        style="margin-top:20px; margin-bottom:20px; display:flex; margin-left:auto; margin-right:auto;"
+                        src="./Public/Mobile/Bdjobs-pro1-sm.svg" alt="">
 
                     <!-- Mobile Image
                     <img src="./Public/Mobile/Bdjobs-pro1-mobile.svg" alt="Pro Feature Mobile"
                         style="display:none; margin:20px auto; max-width:100%; height:auto; width:100%;"> -->
 
+                    <!-- second img  -->
+                    <!------------------------------- Desktop Image --------------------------------------------->
+                    <img class="desktop-img" src="./Public/Web/Pro-Feature.svg" alt="Pro Feature Desktop"
+                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+
+
+                    <img class="mobile-img" src="./Public/Mobile/Pro-Feature-sm.svg" alt="Pro Feature Desktop"
+                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+
+                    <!-- third img  -->
                     <!-- Desktop Image -->
-                    <img src="./Public/Web/Pro-Feature.svg" alt="Pro Feature Desktop"
-                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+                    <div style="position: relative;" class="">
+                        <img class="desktop-img" src="./Public/Web/75-off.svg" alt="Pro Feature Desktop"
+                            style="display:block; margin:20px auto; max-width:100%; height:auto;">
 
-                    <img src="./Public/Web/75-off.svg" alt="Pro Feature Desktop"
-                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+                        <!-- for mobile  -->
+                        <img class="mobile-img" src="./Public/Mobile/75-off-sm.svg" alt="Pro Feature Desktop"
+                            style="display:block; margin:20px auto; height:auto;">
 
-                    <!-- <img src="./Public/Web/75%-off.svg" alt="" style=""> -->
+                        <div style="position: absolute; bottom: 20px; left: 45%;" class="desktop-img">
+                            <button
+                                style=" padding: 10px 20px; background-color: red; 
+                                 display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 8px;">
+                                <span>text</span>
+                                <span style="padding-top: 4px;">
+                                    <img src="./Public/assets/arrow-icon.svg" alt="">
+                                </span>
+                            </button>
 
+                        </div>
+
+
+                        <!-- for mobile -->
+
+                        <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);"
+                            class="mobile-img">
+                            <button
+                                style=" padding: 3px 5px; background-color: green; 
+                                                         display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 8px;">
+                                <span>text</span>
+                                <span style="padding-top: 4px;">
+                                    <img src="./Public/assets/arrow-icon.svg" alt="">
+                                </span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <!--------------------- Mobile Image---------------------------------------->
 
                 </div>
+
+
             </section>
         </div>
 
-        <!-- Footer -->
-        <div style="margin-top:40px; text-align:center; font-size:13px;">
-            <p style="color:#475467; font-size:14px;">Need further assistance? Contact with our support</p>
 
-            <div
-                style="margin-top:8px; font-weight:500; margin-bottom:40px; display:flex; align-items:center; justify-content:center; gap:8px; font-size:14px;">
-                <img src="./Public/assets/phone_call.svg" alt="">
-                <div style="color:#1D5FA2; font-family:sans-serif; font-size:14px; font-weight:600; line-height:20px;">
-                    <a href="tel:09638666444" style="color:#1D5FA2; text-decoration:none;">0963 8666 444</a>,
-                    <a href="tel:01897627588" style="color:#1D5FA2; text-decoration:none;">01897-627588</a>
-                </div>
-            </div>
-
-            <div style="margin-top:16px; display:flex; align-items:center; justify-content:center; gap:8px;">
-                <div style="display:flex; gap:8px;">
-                    <img src="./Public/assets/playstore_badge.svg" alt="Playstore">
-                    <img src="./Public/assets/Applestore_Badge.svg" alt="Appstore">
-                </div>
-
-                <div style="display:flex; gap:8px;">
-                    <img src="./Public/assets/Instragram_icon.svg" alt="Instagram">
-                    <img src="./Public/assets/facebook_icon.svg" alt="Facebook">
-                    <img src="./Public/assets/Linkedin_icon.svg" alt="LinkedIn">
-                    <img src="./Public/assets/Google_icon.svg" alt="Google">
-                    <img src="./Public/assets/Youtube_icon.svg" alt="YouTube">
-                </div>
-            </div>
-
-            <div
-                style="margin-top:24px; display:flex; align-items:center; justify-content:center; gap:16px; color:#C63C92;">
-                <a href="#"
-                    style="color:#C63C92; text-align:center; font-family:sans-serif; font-size:12px; font-weight:500; text-decoration:underline;">Search
-                    Jobs</a>
-                <span style="color:#94a3b8;">|</span>
-                <a href="#"
-                    style="color:#C63C92; text-align:center; font-family:sans-serif; font-size:12px; font-weight:500; text-decoration:underline;">FAQ</a>
-                <span style="color:#94a3b8;">|</span>
-                <a href="#"
-                    style="color:#C63C92; text-align:center; font-family:sans-serif; font-size:12px; font-weight:500; text-decoration:underline;">Unsubscribe</a>
-            </div>
-
-            <p
-                style="margin-top:24px; color:#344054; text-align:center; font-family:sans-serif; font-size:12px; font-weight:500; line-height:18px;">
-                BDBL Bhaban (8th Floor–West), 12, Kazi Nazrul Islam Avenue, Dhaka 1215
-            </p>
-        </div>
     </div>
 </body>
 
