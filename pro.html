@@ -8,6 +8,10 @@
     <!-- Optional: Basic media query for mobile -->
     <style>
         /* Default: Desktop styles */
+        * {
+            font-size: large;
+        }
+
         .mobile-img {
             display: none !important;
         }
@@ -21,6 +25,9 @@
         }
 
         @media (max-width: 600px) {
+            * {
+                font-size: small;
+            }
 
             .responsive-box {
                 padding: 20px;
@@ -41,7 +48,7 @@
 <body style="margin:0; padding:0; font-family: 'Noto Sans Bengali', sans-serif; ">
     <div style="min-height:100vh; padding-top:24px; padding-bottom:24px;">
         <div
-            style="margin-left:auto; margin-right:auto; max-width:720px; background-color:#F2F5F8; box-shadow:0 1px 2px rgba(0,0,0,0.05); border-radius:12px; overflow:hidden; padding:40px; border:1px solid rgba(0,0,0,0.05);">
+            style="margin-left:auto; margin-right:auto; max-width:720px; background-color:#F2F5F8; box-shadow:0 1px 2px rgba(0,0,0,0.05); border-radius:12px; overflow:hidden; padding:12px; border:1px solid rgba(0,0,0,0.05);">
             <section>
 
                 <!-- Top bar -->
@@ -66,7 +73,7 @@
 
                 <!-- Main card -->
                 <div class="responsive-box"
-                    style="position:relative; padding:40px; border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden;">
+                    style="position:relative; border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden;">
 
                     <!-- first img  -->
                     <img class="desktop-img"
@@ -156,17 +163,18 @@
                             </span>
                         </div>
 
+
                         <!-- App Store & Social Icons -->
                         <div
                             style="margin:20px 0; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px;">
                             <!-- App Store Badges -->
-                            <div style="display:flex; gap:8px; align-items:center;">
+                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
                                 <img src="./Public/assets/playstore_badge.svg" alt="Google Play" style="height:30px;">
                                 <img src="./Public/assets/Applestore_Badge.svg" alt="App Store" style="height:30px;">
                             </div>
 
                             <!-- Social Icons -->
-                            <div style="display:flex; gap:8px; align-items:center;">
+                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
                                 <img src="./Public/assets/Instragram_icon.svg" alt="Instagram"
                                     style="height:20px; width:20px; border-radius:4px;">
                                 <img src="./Public/assets/facebook_icon.svg" alt="Facebook"
@@ -177,6 +185,23 @@
                                     style="height:20px; width:20px; border-radius:4px;">
                                 <img src="./Public/assets/Youtube_icon.svg" alt="YouTube"
                                     style="height:20px; width:20px; border-radius:4px;">
+                            </div>
+
+                            <!-- socila icon for mobile  -->
+
+                            <div class="mobile-img">
+                                <img src="./Public/assets/playstore_badge.svg" alt="Google Play" style="height:20px;">
+                                <img src="./Public/assets/Applestore_Badge.svg" alt="App Store" style="height:20px;">
+                                <img src="./Public/assets/Instragram_icon.svg" alt="Instagram"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/facebook_icon.svg" alt="Facebook"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Linkedin_icon.svg" alt="LinkedIn"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Google_icon.svg" alt="Google"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Youtube_icon.svg" alt="YouTube"
+                                    style="height:14px; width:14px; border-radius:4px;">
                             </div>
                         </div>
 

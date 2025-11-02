@@ -8,6 +8,14 @@
     <!-- Optional: Basic media query for mobile -->
     <style>
         /* Default: Desktop styles */
+        * {
+            font-size: large;
+        }
+
+        .responsive-box {
+            padding: 40px;
+        }
+
         .mobile-img {
             display: none !important;
         }
@@ -17,6 +25,14 @@
         }
 
         @media (max-width: 600px) {
+            * {
+                font-size: small;
+            }
+
+            .responsive-box {
+                padding: 12px;
+            }
+
             .desktop-img {
                 display: none !important;
             }
@@ -36,7 +52,7 @@
 <body style="margin:0; padding:0; font-family: 'Noto Sans Bengali', sans-serif; ">
     <div style="min-height:100vh; padding-top:24px; padding-bottom:24px;">
         <div
-            style="margin-left:auto; margin-right:auto; max-width:max-content ; background-color:#F2F5F8; box-shadow:0 1px 2px rgba(0,0,0,0.05); border-radius:12px; overflow:hidden; padding:40px; border:1px solid rgba(0,0,0,0.05);">
+            style="margin-left:auto; margin-right:auto; max-width:max-content ; background-color:#F2F5F8; box-shadow:0 1px 2px rgba(0,0,0,0.05); border-radius:12px; overflow:hidden; padding:12px; border:1px solid rgba(0,0,0,0.05);">
 
 
             <section>
@@ -62,22 +78,35 @@
                 </div>
 
                 <!-- Main card -->
-                <div
-                    style="position:relative; padding:40px; border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden; width: auto;">
+                <div class="responsive-box"
+                    style="position:relative;  border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden; width: auto;">
 
 
 
-                    <div style="font-size: 24px;
-                     margin-left: auto;
-                      margin-right: auto;
-                       text-align: center;
+                    <div class="desktop-img" style="font-size: 24px;
+                         margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
                         font-weight: 700;
+                         padding-top: 10px;
+                         padding-bottom: 20px;
                         color: #464444;
                         ">
                         বিডিজবস প্রো এখনই রিনিউ করুন!
                     </div>
+                    <div class="mobile-img" style="font-size: 16px;
+                                             margin-left: auto;
+                                            margin-right: auto;
+                                            text-align: center;
+                                            font-weight: 700;
+                                            padding-top: 10px;
+                                            padding-bottom: 20px;
+                                            color: #464444;
+                                            ">
+                        বিডিজবস প্রো এখনই রিনিউ করুন!
+                    </div>
 
-                    <div class="font-size: 14px;">
+                    <div class="" style="color: #344054; ">
                         <div style="padding-bottom: 10px;">
                             প্রিয় ##,
                         </div>
@@ -98,124 +127,21 @@
                         </div>
                     </div>
 
+                    <img class="desktop-img" src="./Public/assets/feature-section-web.svg" alt="Pro Feature Desktop"
+                        style="display:block; margin:20px auto; max-width:100%; height:auto; width: 100%;">
 
 
-
-                    <div class="desktop-img">
-                        <div style="display: flex;
-                                        align-items: center;
-                                        margin-bottom: 20px;
-                                        ">
-                            <img src="./Public/Web/Pro-small-logo.svg" alt="">
-                            <div>সাবস্ক্রিপশন কেন রিনিউ করবেন?</div>
-                        </div>
-                    </div>
-
-                    <div class="mobile-img">
-                        <div style="display: flex;
-                                            align-items: center;
-                                            margin-bottom: 20px;
-                                            ">
-                            <img style="height: auto ; width: 60px;" src="./Public/Mobile/Pro-small-logo-sm.svg" alt="">
-                            <div style="font-size: 12px; text-wrap: nowrap;">সাবস্ক্রিপশন কেন রিনিউ করবেন?</div>
-                        </div>
-
-                    </div>
-                    <!---------------------------------------------------------- for desktop  -->
+                    <img class="mobile-img" src="./Public/assets/feature-section-app.svg" alt="Pro Feature Desktop"
+                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
 
 
-                    <div class="desktop-img">
-                        <div
-                            style="display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 12px; column-gap: 20px;">
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/profile-view.svg" alt="" srcset="">
-                                <div>প্রোফাইল ভিউ ডিটেইলস</div>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/unlimited-apply.svg" alt="" srcset="">
-                                <div>আনলিমিটেড অ্যাপ্লাই</div>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/message.svg" alt="" srcset="">
-                                <div>নিয়গকর্তাকে ম্যাসেজ</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/job-matching.svg" alt="" srcset="">
-                                <div>জবে ম্যাচিং পার্সেন্টেজ</div>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/boost-application.svg" alt="" srcset="">
-                                <div>বুস্ট অ্যাপ্লিকেশন</div>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <img src="./Public/icon-app/applicaiton-insite.svg" alt="" srcset="">
-                                <div>এপ্লিকেশন ইনসাইট</div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!---------------------------------------------------------- for mobile  -->
-
-
-                    <div class="mobile-img"
-                        style="width: auto; margin-left:auto; margin-right:auto; max-width:max-content ; font-size: 14px;">
-
-                        <div style="
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-                            row-gap: 10px;
-                            column-gap: 20px;
-                            align-items: center;
-                            font-size: 14px;
-                            color: #333;
-                        ">
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; ">
-                                <img src="./Public/icon-web/profile-view.svg" alt="" style="width: 14px; height: 14px;">
-                                <div style="">প্রোফাইল ভিউ ডিটেইলস</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
-                                <img src="./Public/icon-web/unlimited-apply.svg" alt=""
-                                    style="width: 14px; height: 14px;">
-                                <div>আনলিমিটেড অ্যাপ্লাই</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
-                                <img src="./Public/icon-web/message.svg" alt="" style="width: 14px; height: 14px;">
-                                <div>নিয়োগকর্তাকে ম্যাসেজ</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
-                                <img src="./Public/icon-web/job-matching.svg" alt="" style="width: 14px; height: 14px;">
-                                <div>জবে ম্যাচিং পার্সেন্টেজ</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
-                                <img src="./Public/icon-web/boost-application.svg" alt=""
-                                    style="width: 14px; height: 14px;">
-                                <div>বুস্ট অ্যাপ্লিকেশন</div>
-                            </div>
-
-                            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
-                                <img src="./Public/icon-web/applicaiton-insite.svg" alt=""
-                                    style="width: 14px; height: 14px;">
-                                <div>এপ্লিকেশন ইনসাইট</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <!-- --------------------------------------third img  -->
 
 
 
                     <!-- Desktop Image -->
                     <div style="position: relative;" class="">
                         <img class="desktop-img" src="./Public/Web/75-off.svg" alt="Pro Feature Desktop"
-                            style="display:block; margin:20px auto; min-width:100%; height:auto;">
+                            style="display:block; margin:20px auto; max-width:100%; height:auto; width: 100%;">
 
                         <!-- for desktop btn -->
                         <img class="mobile-img" src="./Public/Mobile/75-off-sm.svg" alt="Pro Feature Desktop"
@@ -224,7 +150,7 @@
                         <div style=" position: absolute; bottom: 20px; left: 40%;" class="desktop-img">
                             <a
                                 style="padding: 0.8vh 0.8rem; background-color: #0DB14B;  
-                                 display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 8px; border-radius: 0.45rem; font-size:.8rem; font-weight: 600;">
+                                                     display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 8px; border-radius: 0.45rem; font-size:.8rem; font-weight: 600;">
                                 <span>Renew now</span>
                                 <span style="padding-top: 4px;">
                                     <img src="./Public/assets/arrow-icon.svg" alt="">
@@ -239,8 +165,8 @@
                         <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); "
                             class="mobile-img">
                             <a
-                                style="padding: 1vh 4vh; background-color: #0DB14B; 
-                                                         display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 2vh; border-radius: 1.5vh; font-size:.5rem; font-weight: 600;">
+                                style="padding: .01vh .5vh; background-color: #0DB14B; 
+                                                                             display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 1vh; border-radius: .5vh; font-size: .5rem; font-weight: 600;">
                                 <span>Renew now</span>
                                 <span style="padding-top: 4px;">
                                     <img style="width: 60%;" src="./Public/assets/arrow-icon.svg" alt="">
@@ -249,8 +175,6 @@
 
                         </div>
                     </div>
-
-
 
                     <!-- Footer -->
                     <div
@@ -279,13 +203,13 @@
                         <div
                             style="margin:20px 0; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px;">
                             <!-- App Store Badges -->
-                            <div style="display:flex; gap:8px; align-items:center;">
+                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
                                 <img src="./Public/assets/playstore_badge.svg" alt="Google Play" style="height:30px;">
                                 <img src="./Public/assets/Applestore_Badge.svg" alt="App Store" style="height:30px;">
                             </div>
 
                             <!-- Social Icons -->
-                            <div style="display:flex; gap:8px; align-items:center;">
+                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
                                 <img src="./Public/assets/Instragram_icon.svg" alt="Instagram"
                                     style="height:20px; width:20px; border-radius:4px;">
                                 <img src="./Public/assets/facebook_icon.svg" alt="Facebook"
@@ -296,6 +220,23 @@
                                     style="height:20px; width:20px; border-radius:4px;">
                                 <img src="./Public/assets/Youtube_icon.svg" alt="YouTube"
                                     style="height:20px; width:20px; border-radius:4px;">
+                            </div>
+
+                            <!-- socila icon for mobile  -->
+
+                            <div class="mobile-img">
+                                <img src="./Public/assets/playstore_badge.svg" alt="Google Play" style="height:20px;">
+                                <img src="./Public/assets/Applestore_Badge.svg" alt="App Store" style="height:20px;">
+                                <img src="./Public/assets/Instragram_icon.svg" alt="Instagram"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/facebook_icon.svg" alt="Facebook"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Linkedin_icon.svg" alt="LinkedIn"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Google_icon.svg" alt="Google"
+                                    style="height:14px; width:14px; border-radius:4px;">
+                                <img src="./Public/assets/Youtube_icon.svg" alt="YouTube"
+                                    style="height:14px; width:14px; border-radius:4px;">
                             </div>
                         </div>
 
