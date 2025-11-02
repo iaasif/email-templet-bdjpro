@@ -16,9 +16,14 @@
             display: block !important;
         }
 
+        .responsive-box {
+            padding: 40px;
+        }
+
         @media (max-width: 600px) {
-            .desktop-img {
-                display: none !important;
+
+            .responsive-box {
+                padding: 20px;
             }
 
             .desktop-img {
@@ -60,12 +65,12 @@
                 </div>
 
                 <!-- Main card -->
-                <div
+                <div class="responsive-box"
                     style="position:relative; padding:40px; border-radius:16px; background-color:white; box-shadow:0 10px 15px rgba(0,0,0,0.1); overflow:hidden;">
 
                     <!-- first img  -->
                     <img class="desktop-img"
-                        style="margin-top:20px; margin-bottom:20px; display:flex; margin-left:auto; margin-right:auto;"
+                        style="margin-top:20px; margin-bottom:20px; display:flex; margin-left:auto; margin-right:auto; width: 100%;"
                         src="./Public/Web/Bdjobs-pro1.svg" alt="">
 
                     <!-- for mobile  -->
@@ -78,7 +83,7 @@
                     <!-- second img  -->
                     <!------------------------------- Desktop Image --------------------------------------------->
                     <img class="desktop-img" src="./Public/Web/Pro-Feature.svg" alt="Pro Feature Desktop"
-                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+                        style="display:block; margin:20px auto; max-width:100%; height:auto; width: 100%;">
 
 
                     <img class="mobile-img" src="./Public/Mobile/Pro-Feature-sm.svg" alt="Pro Feature Desktop"
@@ -91,7 +96,7 @@
                     <!-- Desktop Image -->
                     <div style="position: relative;" class="">
                         <img class="desktop-img" src="./Public/Web/75-off.svg" alt="Pro Feature Desktop"
-                            style="display:block; margin:20px auto; max-width:100%; height:auto;">
+                            style="display:block; margin:20px auto; max-width:100%; height:auto; width: 100%;">
 
                         <!-- for desktop btn -->
                         <img class="mobile-img" src="./Public/Mobile/75-off-sm.svg" alt="Pro Feature Desktop"
@@ -115,8 +120,8 @@
                         <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); "
                             class="mobile-img">
                             <a
-                                style="padding: 1vh 4vh; background-color: #0DB14B; 
-                                                         display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 2vh; border-radius: 1.5vh; font-size:.5rem; font-weight: 600;">
+                                style="padding: .01vh .5vh; background-color: #0DB14B; 
+                                                         display: flex; align-items: center; justify-content: center; color: #F2F5F8; gap: 1vh; border-radius: .5vh; font-size: .5rem; font-weight: 600;">
                                 <span>Renew now</span>
                                 <span style="padding-top: 4px;">
                                     <img style="width: 60%;" src="./Public/assets/arrow-icon.svg" alt="">
