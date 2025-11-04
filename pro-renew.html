@@ -8,10 +8,8 @@
     <!-- Optional: Basic media query for mobile -->
     <style>
         /* Default: Desktop styles */
-
-
-        .responsive-box {
-            padding: 40px;
+        * {
+            font-size: large;
         }
 
         .mobile-img {
@@ -19,20 +17,20 @@
         }
 
         .desktop-img {
-            display: block !important;
+            display: table !important;
         }
 
-        @media (max-width: 600px) {
+        .responsive-box {
+            padding: 40px;
+        }
+
+        @media (max-width:600px) {
             * {
                 font-size: small;
             }
 
             .responsive-box {
-                padding: 12px;
-            }
-
-            .desktop-img {
-                display: none !important;
+                padding: 20px;
             }
 
             .desktop-img {
@@ -40,11 +38,12 @@
             }
 
             .mobile-img {
-                display: block !important;
+                display: table !important;
             }
 
         }
     </style>
+
 </head>
 
 <body style="margin:0; padding:0; font-family: 'Noto Sans Bengali', sans-serif; ">
@@ -61,14 +60,16 @@
                     <div style="display:flex; align-items:center; gap:12px;">
                         <img class="desktop-img" src="./email-template-img/email-tem-Bdjobs-logo.png" alt="bdjobs logo">
                         <!-- for mobile  -->
-                        <img class="mobile-img" src="./email-template-img/email-tem-Bdjobs-logo-sm.png" alt="bdjobs logo">
+                        <img class="mobile-img" src="./email-template-img/email-tem-Bdjobs-logo-sm.png"
+                            alt="bdjobs logo">
 
                     </div>
 
                     <div style="display:flex; align-items:center;">
-                        <img style="width: 100%;" class="desktop-img" src="./email-template-img/email-tem-Bdjobs-pro-photo.png" alt="">
-                        <img style="width: 100%;" class="mobile-img" src="./email-template-img/email-tem-Bdjobs-pro-photo-sm.png"
-                            alt="">
+                        <img style="width: 100%;" class="desktop-img"
+                            src="./email-template-img/email-tem-Bdjobs-pro-photo.png" alt="">
+                        <img style="width: 100%;" class="mobile-img"
+                            src="./email-template-img/email-tem-Bdjobs-pro-photo-sm.png" alt="">
 
                     </div>
 
@@ -81,30 +82,35 @@
 
 
 
-                    <div class="desktop-img" style="font-size: 24px;
-                         margin-left: auto;
-                        margin-right: auto;
-                        text-align: center;
-                        font-weight: 700;
-                        padding-top: 10px;
-                         padding-bottom: 20px;
-                        color: #464444;
-                        ">
+                    <div class="desktop-img" style="
+                  display:block;
+                  width:100%;
+                  max-width:600px;        /* match your image width */
+                  margin:10px auto;
+                  text-align:center;
+                  font-size:24px;
+                  font-weight:700;
+                  color:#464444;
+                  line-height:1.4;
+                ">
                         বিডিজবস প্রো এখনই রিনিউ করুন!
                     </div>
-                    <div class="mobile-img" style="font-size: 16px;
-                                             margin-left: auto;
-                                            margin-right: auto;
-                                            text-align: center;
-                                            font-weight: 700;
-                                            padding-top: 10px;
-                                            padding-bottom: 20px;
-                                            color: #464444;
-                                            ">
+                    <div class="mobile-img" style="
+                  display:block;
+                  width:100%;
+                  max-width:600px;
+                  margin:10px auto;
+                  text-align:center;
+                  font-size:16px;
+                  font-weight:700;
+                  color:#464444;
+                  line-height:1.4;
+                ">
                         বিডিজবস প্রো এখনই রিনিউ করুন!
                     </div>
 
-                    <div class="" style="color: #344054; font-size: 14px;">
+                    <!-- for desktop -------------------------------------------- -->
+                    <div class="desktop-img" style="color: #344054; font-size: 14px;">
                         <div style="padding-bottom: 10px;">
                             প্রিয় ##,
                         </div>
@@ -125,137 +131,243 @@
                         </div>
                     </div>
 
-                    <img class="desktop-img" src="./email-template-img/email-tem-Pro-Feature.png" alt="Pro Feature Desktop"
+
+                    <!-- ---------------------------------for mobile  -->
+
+
+                    <div class="mobile-img"
+                        style="color: #344054; font-size: 14px; max-width: 272px; margin-left: auto; margin-right: auto;">
+                        <div style="padding-bottom: 10px;">
+                            প্রিয় ##,
+                        </div>
+                        <div>
+                            আপনার বিডিজবস প্রো ## প্যাকেজের মেয়াদ আর ## দিন আছে। আগামী ##/##/## তারিখে আপনার প্যাকেজের
+                            মেয়াদ
+                            শেষ হবে।
+
+                            <div style="padding-bottom: 10px; padding-top: 10px;">
+                                মেয়াদ শেষ হওয়ার আগে এখনই আপনার প্যাকেজ রিনিউ করুন এবং বাধাহীনভাবে উপভোগ করুন বিডিজবস
+                                প্রো-এর
+                                এক্সক্লুসিভ সব ফিচার।
+                            </div>
+
+                            <div>
+                                🎉 সাথে রয়েছে বিশেষ ডিসকাউন্ট! 🎉
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="desktop-img" src="./email-template-img/email-tem-Pro-Feature.png"
+                        alt="Pro Feature Desktop"
                         style="display:block; margin:20px auto; max-width:100%; height:auto; width: 100%;">
 
 
-                    <img class="mobile-img" src="./email-template-img/email-tem-Pro-Feature-sm.png" alt="Pro Feature Desktop"
-                        style="display:block; margin:20px auto; max-width:100%; height:auto;">
+                    <img class="mobile-img" src="./email-template-img/email-tem-Pro-Feature-sm.png"
+                        alt="Pro Feature Desktop" style="display:block; margin:20px auto; max-width:100%; height:auto;">
 
 
 
 
 
-                    <!-- Desktop & Mobile Offer Section -->
-                    <div style="position: relative; text-align:center; margin-top:20px;">
+                    <!-- Offer Section (Centered Floating Button) -->
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" align="center"
+                        style="margin:20px 0;">
+                        <tr>
+                            <td align="center">
+                                <!-- Desktop version -->
+                                <table role="presentation" width="600" cellspacing="0" cellpadding="0"
+                                    class="desktop-img"
+                                    background="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-75-off.png"
+                                    style="background-size:contain ; background-position:center; background-repeat:no-repeat; display:block; max-width:100%; height:auto; width:100%;">
+                                    <tr>
+                                        <!-- ✅ The key: text-align:center and inline-block button -->
+                                        <td align="center" valign="middle"
+                                            style="padding:220px 0 20px 0; text-align:center;">
+                                            <a href="#" style="
+                                                             background-color: #0DB14B;
+                                                             color: #ffffff;
+                                                             text-decoration: none;
+                                                             font-weight: 600;
+                                                             padding: 10px 20px 7px 20px;
+                                                             border-radius: 8px;
+                                                             display: inline-block;
+                                                             font-size: 14px;
+                                                             line-height: 1.2;
+                                                           ">
+                                                <span style="vertical-align: middle;">বিডিজবস প্রো কিনুন</span>
+                                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-arrow-icon.png"
+                                                    alt=""
+                                                    style="width: 20px; height: auto; vertical-align: middle; margin-left: 6px;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
 
-                        <!-- Desktop image -->
-                        <img class="desktop-img" src="./email-template-img/email-tem-75-off.png"
-                            alt="Pro Feature Desktop"
-                            style="display:block; margin:20px auto; max-width:100%; height:auto; width:100%;">
+                                <!-- Mobile version -->
+                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0"
+                                    class="mobile-img"
+                                    background="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-75-off-sm.png"
+                                    style="background-size:contain; background-position:center; background-repeat:no-repeat; display:block; width:100%; height:auto;">
+                                    <tr>
+                                        <td align="center" valign="middle"
+                                            style="padding:100px 0 20px 0; text-align:center;">
+                                            <a href="#" style="background-color:#0DB14B; 
+                                                            color:#ffffff; 
+                                                            text-decoration:none; 
+                                                            font-weight:600;
+                                                            padding:6px 10px; 
+                                                            border-radius:6px; 
+                                                            display:inline-block; 
+                                                            font-size:5px;">
+                                                <span style="font-size: 12px;">বিডিজবস প্রো কিনুন</span>
+                                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-arrow-icon.png"
+                                                    alt=""
+                                                    style="width:12px; height:auto; vertical-align:middle; margin-left:4px;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
 
-                        <!-- Mobile image -->
-                        <img class="mobile-img"
-                            src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-75-off-sm.png"
-                            alt="Pro Feature Mobile" style="display:block; margin:20px auto; max-width:100%; height:auto;">
 
-                        <!-- Desktop button -->
-                        <div class="desktop-img"
-                            style="position:absolute; bottom:20px; left:0; right:0; display:flex; justify-content:center;">
-                            <a href="#"
-                                style="padding:10px 16px; background-color:#0DB14B; color:#fff; text-decoration:none;
-                   display:inline-flex; align-items:center; gap:8px; border-radius:8px; font-size:14px; font-weight:600;">
-                                <span>বিডিজবস প্রো কিনুন</span>
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-arrow-icon.png" alt=""
-                                    style="width:14px; height:auto;">
-                            </a>
-                        </div>
-
-                        <!-- Mobile button -->
-                        <div class="mobile-img"
-                            style="position:absolute; bottom:12px; left:0; right:0; display:flex; justify-content:center;">
-                            <a href="#" style="padding:6px 10px; background-color:#0DB14B; color:#fff; text-decoration:none;
-               display:inline-flex; align-items:center; gap:4px; border-radius:6px; 
-               font-size:9px; font-weight:600;">
-                                <span>বিডিজবস প্রো কিনুন</span>
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-arrow-icon.png" alt=""
-                                    style="width:8px; height:auto;">
-                            </a>
-                        </div>
-
-                    </div>
 
                     <!-- Footer -->
                     <div
-                        style="margin-top:30px; text-align:center; font-size:3rem; color:#475467; font-family:'Noto Sans', sans-serif;">
-
-
+                        style="margin-top:40px; text-align:center; font-size:3rem; color:#475467; font-family:'Noto Sans', sans-serif;">
                         <!-- Support Text -->
-                        <p style="margin:0 0 8px 0; font-size:.8rem; font-weight:400;">
+                        <p style="margin:0 0 0px 0; font-size:.8rem; font-weight:400;">
                             বিস্তারিত জানতে কল করুন
                         </p>
 
+
                         <!-- Contact Numbers -->
-                        <div
-                            style="margin:8px 0 16px 0; display:flex; align-items:center; justify-content:center; gap:8px; font-size:0.75rem; font-weight:600; color:#1D5FA2; flex-wrap:nowrap;">
-                            <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-phone_call.png" alt="Phone"
-                                style="height:20px; vertical-align:middle; flex-shrink:0;">
-                            <span style="white-space:nowrap;">
-                                <a href="tel:09638666444" style="color:#1D5FA2; text-decoration:underline;">0963 8666
-                                    444</a>,
-                                <a href="tel:01897627588"
-                                    style="color:#1D5FA2; text-decoration:underline;">01897-627588</a>
-                            </span>
-                        </div>
+                        <table role="presentation" align="center"
+                            style="margin: 0px auto 16px auto; text-align:center; font-size:0.75rem; font-weight:600; color:#1D5FA2;">
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-phone_call.png"
+                                        alt="Phone" style="height:20px; vertical-align:middle; display:inline-block;">
+                                </td>
+                                <td style="padding-left:8px; vertical-align:middle;">
+                                    <span style="white-space:nowrap;">
+                                        <a href="tel:09638666444" style="color:#1D5FA2; text-decoration:underline;">0963
+                                            8666 444</a>,
+                                        <a href="tel:01897627588"
+                                            style="color:#1D5FA2; text-decoration:underline;">01897-627588</a>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
 
-                        <!-- App Store & Social Icons -->
-                        <div
-                            style="margin:20px 0; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px;">
-                            <!-- App Store Badges -->
-                              <!-- App Store Badges -->
-                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-playstore_badge.png"
-                                    alt="Google Play" style="height:30px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Applestore_Badge.png"
-                                    alt="App Store" style="height:30px;">
-                            </div>
 
-                             <!-- Social Icons -->
-                            <div style="display:flex; gap:8px; align-items:center;" class="desktop-img">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Instragram_icon.png"
-                                    alt="Instagram" style="height:20px; width:20px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-facebook_icon.png"
-                                    alt="Facebook" style="height:20px; width:20px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Linkedin_icon.png"
-                                    alt="LinkedIn" style="height:20px; width:20px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Google_icon.png"
-                                    alt="Google" style="height:20px; width:20px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Youtube_icon.png"
-                                    alt="YouTube" style="height:20px; width:20px; border-radius:4px;">
-                            </div>
 
-                            <!-- socila icon for mobile  -->
 
-                            <div class="mobile-img">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-playstore_badge.png"
-                                    alt="Google Play" style="height:20px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Applestore_Badge.png"
-                                    alt="App Store" style="height:20px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Instragram_icon.png"
-                                    alt="Instagram" style="height:14px; width:14px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-facebook_icon.png"
-                                    alt="Facebook" style="height:14px; width:14px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Linkedin_icon.png"
-                                    alt="LinkedIn" style="height:14px; width:14px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Google_icon.png"
-                                    alt="Google" style="height:14px; width:14px; border-radius:4px;">
-                                <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Youtube_icon.png"
-                                    alt="YouTube" style="height:14px; width:14px; border-radius:4px;">
-                            </div>
-                        </div>
 
-                        <!-- Navigation Links -->
-                        <div
-                            style="margin:16px 0; display:flex; justify-content:center; align-items:center; gap:12px; font-size:12px; font-weight:500; color:#C63C92;">
-                            <a href="#" style="color:#C63C92; text-decoration:underline;">Search Jobs</a>
-                            <span style="color:#94a3b8;">|</span>
-                            <a href="#" style="color:#C63C92; text-decoration:underline;">FAQ</a>
-                            <span style="color:#94a3b8;">|</span>
-                            <a href="#" style="color:#C63C92; text-decoration:underline;">Unsubscribe</a>
-                        </div>
 
+
+                        <!-- new test  -->
+                        <table role="presentation" align="center" class="desktop-img"
+                            style="text-align:center; font-size:0.75rem; font-weight:600; color:#1D5FA2;">
+                            <tr>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-playstore_badge.png"
+                                        alt="Google Play" width="90" height="30" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Applestore_Badge.png"
+                                        alt="App Store" width="90" height="30" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Instragram_icon.png"
+                                        alt="Instagram" width="20" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-facebook_icon.png"
+                                        alt="Facebook" width="20" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Linkedin_icon.png"
+                                        alt="LinkedIn" width="20" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Google_icon.png"
+                                        alt="Google" width="20" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 4px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Youtube_icon.png"
+                                        alt="YouTube" width="20" height="20" border="0" style="display:block;">
+                                </td>
+
+                            </tr>
+                        </table>
+                        <!-- new test  for mobile -->
+                        <table role="presentation" align="center" class="mobile-img"
+                            style="text-align:center; font-size:0.75rem; font-weight:600; color:#1D5FA2;">
+                            <tr>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-playstore_badge.png"
+                                        alt="Google Play" width="68" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Applestore_Badge.png"
+                                        alt="App Store" width="68" height="20" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Instragram_icon.png"
+                                        alt="Instagram" width="14" height="14" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-facebook_icon.png"
+                                        alt="Facebook" width="14" height="14" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Linkedin_icon.png"
+                                        alt="LinkedIn" width="14" height="14" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Google_icon.png"
+                                        alt="Google" width="14" height="14" border="0" style="display:block;">
+                                </td>
+                                <td align="center" style="padding:0 2px;">
+                                    <img src="https://mybdjobs.bdjobs.com/mybdjobs/images/email-tem-Youtube_icon.png"
+                                        alt="YouTube" width="14" height="14" border="0" style="display:block;">
+                                </td>
+
+                            </tr>
+                        </table>
+
+
+
+                        <!-- Navigation Links (Centered, Gmail-safe) -->
+                        <table role="presentation" align="center"
+                            style="text-align:center; margin:16px auto; font-size:12px; font-weight:500; color:#C63C92;">
+                            <tr>
+                                <td align="center" style="text-align:center;">
+                                    <a href="#" style="color:#C63C92; text-decoration:underline;">Search Jobs</a>
+                                    <span style="color:#94a3b8;"> | </span>
+                                    <a href="#" style="color:#C63C92; text-decoration:underline;">FAQ</a>
+                                    <span style="color:#94a3b8;"> | </span>
+                                    <a href="#" style="color:#C63C92; text-decoration:underline;">Unsubscribe</a>
+                                </td>
+                            </tr>
+                        </table>
                         <!-- Address -->
-                        <p style="margin:16px 0 0 0; font-size:12px; color:#344054; line-height:1.4;">
+                        <table class="desktop-img"
+                            style="margin:16px 0 0 0; font-size:12px; color:#344054; line-height:1.4;">
+                            <tr>
+                                <td>
+                                    BDBL Bhaban (8th Floor–West), 12, Kazi Nazrul Islam Avenue, Dhaka 1215
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+                        <p class="mobile-img"
+                            style=" font-size:12px; color:#344054; line-height:1.4; max-width: 272px; margin-left: auto; margin-right: auto;">
                             BDBL Bhaban (8th Floor–West), 12, Kazi Nazrul Islam Avenue, Dhaka 1215
                         </p>
                     </div>
